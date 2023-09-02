@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box-container {
+            display: flex;
+            gap: 10px;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .gray-box {
+            width: 30%;
+            background-color: lightgray;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .yellow-box {
+            width: 70%;
+            background-color: lightgoldenrodyellow;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            
+            .box-container{
+                flex-direction: column;
+            }
+            .gray-box {
+                width: 100%;
+                height: 30vh;
+            }
+            .yellow-box{
+                width: 100%;
+                height: 70vh;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box-container">
+        <div class="gray-box">
+            <h1>Left</h1>
+        </div>
+        <div class="yellow-box">
+            <h1>Right</h1>
+        </div>
+    </div>
+</body>
+
+</html>
