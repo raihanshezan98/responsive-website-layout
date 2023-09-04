@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .meal-container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .food-content {
+                display: flex;
+                border: 1px solid lightgray;
+                width: 100%;
+            }
+
+            .food-photo {
+                width: 20%;
+            }
+
+            .food-text {
+                width: 80%;
+            }
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            .food-text {
+                padding: 10px;
+            }
+
+            .btn-primary {
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+            /* For small devices  */
+            @media screen and (max-width: 576px) {
+                .food-content {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .food-photo {
+                    width: 100%;
+                }
+
+                img {
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="meal-container">
+
+            <div class="food-content">
+                <div class="food-photo">
+                    <img src="picture/breakfast_food.jpg" alt="Picture of a Breakfast Food">
+                </div>
+                <div class="food-text">
+                    <h2>Breakfast Food</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quasi sequi maxime soluta vero
+                        quaerat qui aut odio suscipit optio? Reiciendis tenetur rerum sint aliquam, illo est omnis
+                        veniam placeat laboriosam quibusdam illum aspernatur similique exercitationem cupiditate
+                        obcaecati! Eveniet laboriosam sunt nisi necessitatibus veritatis exercitationem perferendis
+                        odit. Optio, quaerat aliquid?</p>
+                    <button class="btn-primary">Read More</button>
+                </div>
+            </div>
+
+            <div class="food-content">
+                <div class="food-photo">
+                    <img src="picture/lunch_food.jpg" alt="Picture of a Lunch Food">
+                </div>
+                <div class="food-text">
+                    <h2>Lunch Food</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, voluptas doloribus aspernatur
+                        neque et totam nulla molestiae, magni laudantium quidem provident pariatur magnam dolore
+                        accusantium illum aliquid sapiente impedit at! Maiores esse, consectetur asperiores quibusdam
+                        corrupti architecto pariatur distinctio molestiae enim, itaque numquam! Vel, distinctio! Maxime
+                        sint quisquam sequi ipsam!</p>
+                    <button class="btn-primary">Read More</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+</body>
+
+</html>
