@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .city-container {
+            width: 100%;
+            display: grid;
+           
+        }
+
+        .city-content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .venice-content {
+            flex-direction: row-reverse;
+        }
+
+        .city-photo {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .city-text {
+            width: 45%;
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        /* For x-small devices  */
+        @media screen and (max-width: 576px)  {
+            .city-content{
+                display: flex;
+                flex-direction: column;
+            }
+            .city-photo{
+                width: 100%;
+            }
+            .city-text{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city-container">
+
+        <div class="city-content">
+            <div class="city-photo">
+                <img src="picture/santorini.jpg" alt="">
+            </div>
+            <div class="city-text">
+                <h1>The view of Santorini, Greece</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tempore odio itaque sit sint. Debitis
+                    sunt aspernatur aliquid, nulla suscipit praesentium maxime. Tenetur architecto ea ex magnam nemo
+                    inventore velit omnis ab excepturi aperiam qui amet ipsa harum nihil necessitatibus, quasi error
+                    modi sequi ullam. Dolore quas ullam quos laboriosam expedita, mollitia non dicta excepturi tenetur
+                    voluptates magnam cum ipsam, libero ea, consequuntur blanditiis praesentium? Earum ipsam excepturi
+                    ducimus ratione repellendus. Ea eligendi error quam quasi veritatis quibusdam consequuntur magni
+                    facilis. Suscipit corporis neque reiciendis expedita cumque quo quaerat amet debitis nulla,
+                    repudiandae, voluptatibus quibusdam modi itaque perspiciatis autem vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam quasi ipsa officiis quod explicabo
+                    sapiente praesentium ut, ducimus fuga qui hic laudantium deleniti iste totam, debitis corrupti
+                    tempore fugit sint autem accusamus modi aperiam tenetur minima. Hic mollitia molestias delectus,
+                    pariatur nisi atque fugiat quasi deleniti nulla vero omnis, nobis eius! Tenetur, ut quis dignissimos
+                    voluptatem fugiat consectetur similique labore dolores repellendus quaerat mollitia ipsum quo facere
+                    expedita iure omnis eius autem ducimus rem corrupti fuga distinctio. Placeat repudiandae deserunt
+                    rem qui voluptates ducimus consequatur suscipit explicabo cum asperiores nesciunt sequi repellat
+                    tempora, temporibus, quam obcaecati labore dolore minima!</p>
+            </div>
+        </div>
+
+        <div class="city-content venice-content">
+            <div class="city-photo">
+                <img src="picture/venice.jpg" alt="">
+            </div>
+            <div class="city-text">
+                <h1>The view of Venice, Italy</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tempore odio itaque sit sint. Debitis
+                    sunt aspernatur aliquid, nulla suscipit praesentium maxime. Tenetur architecto ea ex magnam nemo
+                    inventore velit omnis ab excepturi aperiam qui amet ipsa harum nihil necessitatibus, quasi error
+                    modi sequi ullam. Dolore quas ullam quos laboriosam expedita, mollitia non dicta excepturi tenetur
+                    voluptates magnam cum ipsam, libero ea, consequuntur blanditiis praesentium? Earum ipsam excepturi
+                    ducimus ratione repellendus. Ea eligendi error quam quasi veritatis quibusdam consequuntur magni
+                    facilis. Suscipit corporis neque reiciendis expedita cumque quo quaerat amet debitis nulla,
+                    repudiandae, voluptatibus quibusdam modi itaque perspiciatis autem vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam quasi ipsa officiis quod explicabo
+                    sapiente praesentium ut, ducimus fuga qui hic laudantium deleniti iste totam, debitis corrupti
+                    tempore fugit sint autem accusamus modi aperiam tenetur minima. Hic mollitia molestias delectus,
+                    pariatur nisi atque fugiat quasi deleniti nulla vero omnis, nobis eius! Tenetur, ut quis dignissimos
+                    voluptatem fugiat consectetur similique labore dolores repellendus quaerat mollitia ipsum quo facere
+                    expedita iure omnis eius autem ducimus rem corrupti fuga distinctio. Placeat repudiandae deserunt
+                    rem qui voluptates ducimus consequatur suscipit explicabo cum asperiores nesciunt sequi repellat
+                    tempora, temporibus, quam obcaecati labore dolore minima!</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
